@@ -1,0 +1,4 @@
+transformers==4.20.0
+huggingface-hub
+git+https://github.com/haven-jeon/PyKoSpacing.git
+torch==2.0.0
