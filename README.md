@@ -1,7 +1,6 @@
 ```
 BaseModel
 ├── model
-│   ├── .gitattributes
 │   ├── config.json
 │   ├── special_tokens_map.json
 │   ├── tokenizer_config.json
@@ -13,10 +12,12 @@ BaseModel
 │   └── project.py
 └── test.ipynb
 ```
+
 - model: 요약모델 및 토크나이저의 가중치 파일이 있습니다.
 - result: project.py로 요약한 결과가 있습니다.
 - text: result 요약에 쓰인 텍스트들이 있습니다.
-- utils: 요약 모델을 불러오는 모듈인 project 모듈이 있습니다. 모듈 안의 Summary 클래스에는 텍스트 파일을 여는 open_txt와 텍스트를 전처리하는 preprocess, 요약 예측을 하는 inference 메서드가 있습니다.
+- utils: 요약 모델을 불러오는 모듈인 project 모듈이 있습니다. 모듈 안의 Summary 클래스에는 텍스트 파일을 열고 리스트에 텍스트를 옮기는 stack_txt와 텍스트를 전처리하는 preprocess, 요약 예측을 하는 inference 메서드가 있습니다.
+
 ```python
 from utils.project import Summary #project.py에 구현된 Summary 클래스를 불러옵니다. 
 
